@@ -1,0 +1,454 @@
+/* 版面設定 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.4s all linear;
+    font-family: "微軟正黑體";
+}
+
+body{
+    margin:0;
+    margin-top: calc(80/1519.2*100vw);
+    height: auto;
+    
+}
+
+/* 網頁菜單 */
+
+header{
+    font-size: calc(22/1519.2*100vw);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index:100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background:  rgb(0, 0, 0);
+    box-shadow: 10px 1rem 1rem rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+header img{
+    width: calc(52.5/1519.2*100vw); 
+    height: calc(65/1519.2*100vw); 
+    padding-bottom: -10px; 
+    filter:saturate(8)
+}
+
+header .navbar a{
+    font-size: calc(22/1519.2*100vw);
+    font-weight: normal;
+    color: white;
+    padding-left: 15px;
+}
+
+header .logo{
+    display: flex;
+    z-index: 100;
+    margin-left: 10px;
+    justify-content:space-between;
+    align-items: center;
+    font-family: 'Yu Gothic UI Semibold';
+    font-size: calc(30/1519.2*100vw);
+    font-weight: 500;
+    color:rgb(0, 140, 255);
+}
+
+header .navbar a:hover{
+    font-size:  calc(22/1519.2*100vw);
+    font-weight: 900;
+    color:rgb(1, 111, 255);
+    transition: 0.5s;
+    padding: 15px 10px 15px 10px;
+}
+
+#menu-bar{
+    font-size: calc(30/1519.2*100vw);
+    cursor: pointer;
+    color: rgb(9, 152, 152);
+    border:2px solid  rgb(9, 152, 152);
+    border-radius: calc(10/1519.2%);
+    padding: calc(10/1519.2*100vw);
+    display:none;
+}
+
+/* 首頁 */
+
+section{
+    padding: calc(10/1519.2*100vw);
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(10/1519.2*100vw);
+    align-items: center;
+}
+
+.home .content{
+    flex: 1 1 30px;
+    padding: calc(70/1519.2*100vw);
+}
+
+.home .img-contentainer{
+    margin: calc(10/1519.2*100vw);
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home .img-contentainer img{
+    width: calc(350/1519.2*100vw);
+}
+
+.home h1{
+    font-size: calc(60/1519.2*100vw);
+    font-weight: 500;
+    color: rgb(43, 147, 182);
+}
+
+.home h2{
+    font-size: calc(40/1519.2*100vw);
+    font-weight: 300;
+    color: rgb(43, 147, 182);
+    margin-left: calc(40/1519.2*100vw);
+}
+
+.home h3{
+    font-size: calc(30/1519.2*100vw);
+    font-weight: 200;
+    color: rgb(43, 147, 182);
+    margin-left: calc(40/1519.2*100vw);
+}
+
+.home li{
+    font-size: calc(30/1519.2*100vw);
+    font-weight: 200;
+    color: rgb(43, 147, 182);
+    margin-left: calc(60/1519.2*100vw);
+}
+
+/* 公司簡介 */
+
+.introductions{
+    margin-top: calc(80/1519.2*100vw);
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    background-size:cover;
+    background-position: center;
+}
+
+.introductions .content{
+    width:100%;
+    margin: calc(50/1519.2*100vw);
+}
+
+.introductions .content h1{
+    text-align: center;
+    font-size: calc(70/1519.2*100vw);
+    font-weight: 550;
+    color:rgb(255, 255, 255);
+    background-color: rgb(4, 157, 252);
+}
+
+.introductions .content p{
+    margin-top: calc(20/1519.2*100vw);
+    text-align: left;
+    font-size: calc(45/1519.2*100vw);
+    font-weight: 600;
+    color: rgb(0, 145, 161);
+}
+
+/* 動力計HORIBA */
+
+.HORIBA{
+    margin-top: calc(80/1519.2*100vw);
+    padding: calc(60/1519.2*100vw);
+}
+
+.HORIBA .content h1{
+    text-align: center;
+    font-size: calc(70/1519.2*100vw);
+    font-weight: 500;
+    color: rgb(1, 118, 131);
+}
+
+.HORIBA .content h2{
+    font-size: calc(40/1519.2*100vw);
+    font-weight: 400;
+    color: rgb(3, 136, 151);
+    margin: calc(30/1519.2*100vw);
+    margin-left: calc(50/1519.2*100vw);
+}
+
+.HORIBA .content li{
+    font-size: calc(40/1519.2*100vw);
+    font-weight: 400;
+    color: rgb(3, 136, 151);
+    margin: calc(30/1519.2*100vw);
+    margin-left: calc(50/1519.2*100vw);
+}
+
+.HORIBA img{
+    width: calc(1000/1519.2*100vw)
+}
+
+/* 生產線檢測DURR */
+
+.DURR{
+    margin-top: calc(80/1519.2*100vw);
+    padding: calc(50/1519.2*100vw);
+}
+
+.DURR .content{
+    align-items: center;
+    margin: calc(50/1519.2*100vw);
+}
+
+.DURR img{
+    width: calc(1000/1519.2*100vw)
+}
+
+.DURR h1{
+    font-weight: 500; 
+    font-size: calc(70/1519.2*100vw); 
+    color: rgb(43, 147, 182);
+}
+
+.DURR h2{
+    font-size: calc(50/1519.2*100vw); 
+    font-weight: 500;
+    color: rgb(43, 101, 182);
+}
+
+.DURR .content li{
+    font-size: calc(30/1519.2*100vw); 
+    font-weight: 500;
+    font-family: '微軟正黑體';
+    color: rgb(43, 147, 182); 
+}
+
+/* 流量測試台SuperFlow */
+
+.SuperFlow{
+    margin-top: calc(80/1519.2*100vw);
+    margin: calc(50/1519.2*100vw); ;
+}
+
+.SuperFlow img{
+    width: calc(1000/1519.2*100vw);
+}
+
+.SuperFlow h1{
+    font-weight: 500; 
+    font-size: calc(70/1519.2*100vw); 
+    color: rgb(43, 147, 182);
+}
+
+.SuperFlow h2{
+    font-weight:500; 
+    font-size: calc(40/1519.2*100vw); 
+    color: rgb(43, 147, 182);
+}
+
+.SuperFlow .content td{
+    vertical-align: top;    /* 設置垂直對齊方式為上方對齊 */
+    font-weight:500; 
+    font-size: calc(40/1519.2*100vw); 
+    color: rgb(43, 147, 182);
+    padding-right: calc(50/1519.2*100vw);
+}
+
+.SuperFlow .content li{
+    font-size: calc(40/1519.2*100vw);
+}
+/* 流量計Max */
+
+.Max{
+    margin-top: calc(80/1519.2*100vw);
+    padding: calc(50/1519.2*100vw);
+}
+
+.Max .content{
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+
+.Max img{
+    width: calc(1000/1519.2*100vw);
+}
+
+.Max h1{
+    font-size: calc(70/1519.2*100vw);
+    color: rgb(43, 147, 182);
+}
+
+.Max h2{
+    font-weight:500;
+    font-size: calc(50/1519.2*100vw);
+    color: rgb(43, 101, 182);
+}
+
+.Max .content li{
+    font-size:  calc(50/1519.2*100vw); 
+    font-weight: 500;
+    color: rgb(43, 147, 182); 
+}
+
+/* 聯絡我們 */
+
+.Contact_us{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    background-size:cover;
+    background-position: center;
+}
+
+.Contact_us .content{
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.Contact_us iframe{
+    width: calc(600/1519.2*100vw);
+    height: calc(450/1519.2*100vw);
+    border: 0;
+}
+
+.Contact_us table{
+    width: 100%;
+    border-collapse: collapse;
+    font-weight:500;
+}
+
+.Contact_us .content td{
+    font-size: calc(25/1519.2*100vw);
+    font-weight: 500;
+    padding: calc(20/1519.2*100vw);
+}
+
+.Contact_us h1{
+    font-size: calc(80/1519.2*100vw);
+    font-weight:500;
+    color: rgb(43, 147, 182);
+}
+
+.Contact_us h2{
+    font-size: calc(50/1519.2*100vw);
+    font-weight: 500;
+    color: rgb(43, 147, 182);
+}
+
+/* 頁尾 */
+
+.footer{
+    bottom: 0;
+    padding-left: 1.5vw;
+    padding-bottom: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    line-height: calc(7/1519.2*100vw);
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+}
+
+.footer h1{
+    width: 100%;
+    font-size: calc(50/1519.2*100vw);
+    font-weight: 500;
+    margin-top: calc(20/1519.2*100vw);
+    padding: calc(15/1519.2*100vw);
+}
+
+.footer h2{
+    font-size: calc(20/1519.2*100vw);
+    font-weight: 500;
+    width: 100%;
+    gap: calc(10/1519.2*100vw);
+    padding: calc(20/1519.2*100vw);
+    padding-top: calc(10/1519.2*100vw);
+}
+
+.footer table{
+    text-align: left;
+    font-size: calc(20/1519.2*100vw);
+    font-weight: 500;
+    width: auto;
+    padding: calc(15/1519.2*100vw);
+    padding-bottom: 0;
+    gap: calc(10/1519.2*100vw);
+}
+
+.footer td{
+    vertical-align: top;
+    width: auto;
+    height: calc(60/1519.2*100vw);
+    padding-right: calc(15/1519.2*100vw);
+}
+
+.footer tr{
+    padding-top: calc(25/1519.2*100vw);
+}
+
+.footer li{
+    text-align: left;
+    margin-bottom: calc(40/1519.2*100vw);
+}
+
+
+/* RWD手機版 */
+
+/* header */
+@media (max-width: 850px){
+    #menu-bar{
+        display:initial;
+        position:absolute;
+        right: 1.3vw;
+        top: 2vw;
+    }
+    header .navbar{
+        position: absolute;
+        top: calc(110/1519.2*100vw); left: 0; right: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        border-top: 3px solid gray;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 );  /* 隱藏下拉選單 */
+    }
+
+    header .navbar a{
+        /* 將連結存進按鈕 */
+        display: block;
+        font-size: calc(22/1519.2*100vw);
+        font-weight: normal;
+        color: rgb(20, 80, 80);
+        margin: calc(10/1519.2*100vw);
+        padding: calc(6/1519.2*100vw);
+        border-left: 3px solid gray;
+        background-color: white;
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding: calc(10/1519.2*100vw);
+    }
+
+}   
